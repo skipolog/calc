@@ -1,0 +1,14 @@
+<div class="calculator">
+    <div class="calculator__wrapper">
+        <h2 class="calculator__deposit deposit__type">Вклад</h2>
+        <select [formControl]="deposit" class="deposit__select" (change)='this.state.changeDeposit(deposit.value)'>
+            <option *ngFor="let deposit of state.typesDeposit" value="{{deposit.code}}">{{deposit.name}}</option>
+        </select>
+        <app-input></app-input>
+        <app-result></app-result>
+    </div>
+    <div class="calculator__info info">
+        <img src="../assets/credit 1.svg" class="info__logo">
+        <img src="../assets/rectangle 14.svg">
+      </div>
+</div>

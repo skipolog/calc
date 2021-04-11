@@ -1,0 +1,33 @@
+<div class='calculator__data'>
+    <div class="data__container">
+        <div class="data__value">
+            <h3 class="data__name">Срок вклада</h3>
+            <p class="data__summ">{{state.selectedPeriod | async}} мес.</p>
+        </div>
+        <input min="{{state.minPeriod | async}}" max="{{state.maxPeriod | async}}" value='{{state.selectedPeriod | async}}'
+        (input)='state.changePeriod($event)'
+        type="range" class="data__range">
+    </div>
+    <div class="data__tooltip">
+        <img src="../assets/icon-info.svg">
+    </div>
+</div>
+<div class='calculator__data'>
+    <div class="data__container">
+        <div class="data__value">
+            <h3 class="data__name">Сумма вклада</h3>
+            <p class="data__summ">
+                {{state.selectedSumm | async}} Р
+            </p>
+        </div>
+        <input min='{{state.minSumm | async}}' 
+            max='{{state.maxSumm | async}}' 
+            type="range"
+            (input)='state.changeSumm($event)'
+            value='{{state.selectedSumm | async}}'
+            class="data__range">
+    </div>
+    <div class="data__tooltip">
+        <img src="../assets/icon-info.svg">
+    </div>
+</div>

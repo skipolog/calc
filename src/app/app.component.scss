@@ -1,0 +1,66 @@
+@import '../styles.scss';
+
+.calculator {
+    display: flex;
+
+    max-width: 1038px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    
+        max-width: 556px;
+        width: 100%;
+    
+        margin-right: 85px;
+    }
+    :active, :focus {
+        outline: none;
+    }
+    
+    &__data {
+        display: flex;
+    }   
+    
+}
+
+.deposit {
+    &__type {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    &__select {
+        width: 100%;
+        max-width: 490px;
+        height: 60px;
+
+        font-size: 16px;
+        line-height: 16px;
+
+        border: 1px solid $blue-color;
+        border-radius: 3px;
+
+        padding: 20px;
+        margin-bottom: 15px;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url(../assets/vector-stroke.svg);
+        background-repeat: no-repeat;
+        background-position: right 20px top 50%, 0 0;
+    }
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    &__logo {
+        margin-left: -25px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'PF DinText Pro';
+    src: local('PF DinText Pro'), 
+    url(./PFDinTextPro-Regular.ttf ) 
+    format('truetype');
+  }
+
+* {
+    font-family: PF DinText Pro;
+    font-weight: normal;
+}
+
+$blue-color: #B4D6EC;
+$dark-blue-color: #489DCF;

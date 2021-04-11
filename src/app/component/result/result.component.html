@@ -1,0 +1,14 @@
+<div class="result">
+    <div>
+      <h3 class="result__name">Процентная ставка</h3>
+      <span class="result__value">{{state.selectedRate | async}} %</span>
+    </div>
+    <div>
+      <h3 class="result__name">Сумма через <span>{{12}} мес.</span></h3>
+      <span class="result__value">{{calculator.summInEndPeriod | async}} P</span>
+    </div>
+    <div>
+      <h3 class="result__name">Доход</h3>
+      <span class="result__value">{{calculator.profit | async}} P</span>
+    </div>
+  </div>
